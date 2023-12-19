@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Test</title>
+  </head>
+  <body>
+    <script>
+      // Your JavaScript goes here!
+      let choice = prompt("Who's there?", "");
+      if (choice === "Admin") {
+        let pw = prompt("Password?", "");
+        if (pw === "TheMaster") {
+          alert("Welcome!");
+        } else if (pw === null || pw === "") {
+          alert("Canceled");
+        } else {
+          alert("Wrong password");
+        }
+      } else if (choice === null || choice === "") {
+        alert("Canceled");
+      } else {
+        alert("I don't know you");
+      }
+    </script>
+  </body>
+</html>
